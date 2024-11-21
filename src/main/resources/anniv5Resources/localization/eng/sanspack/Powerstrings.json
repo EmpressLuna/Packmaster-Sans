@@ -1,0 +1,37 @@
+{
+  "${ModID}:JudgementPower": {
+    "NAME": "Judgement Form",
+    "DESCRIPTIONS": [
+      "At the start of each turn, gain 1 Sidestep and lose 1 Strength, Dexterity or Focus"
+    ]
+  },
+  "${ModID}:SidestepPower": {
+    "NAME": "Sidestep",
+    "DESCRIPTIONS": [
+      "Nullify the next attack. Wears off next turn."
+    ]
+  },
+  "${ModID}:DeEnergizedPower": {
+    "NAME": "De-Energized",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, lose #b",
+      " [E] ."
+    ]
+  },
+  "${ModID}:VexVinciblePower": {
+    "NAME": "Invincible",
+    "DESCRIPTIONS": [
+      "Caps all damage and HP loss taken to #b",
+      " in a turn. Removed after activation.",
+      "Caps all damage and HP loss taken to #b",
+      " in a turn. Removed after #b",
+      " activations."
+    ]
+  },
+  "${ModID}:NextTurnGainSlimeCrushPower": {
+    "NAME": "Preparing Crush",
+    "DESCRIPTIONS": [
+      "This shouldn't ever actually appear, right?"
+    ]
+  }
+}

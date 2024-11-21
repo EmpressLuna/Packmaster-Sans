@@ -1,0 +1,15 @@
+{
+  "${ModID}:SansPack": {
+    "TEXT": [
+      "sans",
+      "Outmaneuvre your enemies by dodging their attacks and dealing 1 damage?",
+      "EmpressLuna"
+    ]
+  },
+  "${ModID}:DownfallPackHat": {
+    "TEXT": [
+      "",
+      ""
+    ]
+  }
+}

@@ -11,7 +11,7 @@ import thePackmaster.powers.AbstractPackmasterPower;
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 
 public class SidestepPower extends AbstractPackmasterPower {
-    public static final String POWER_ID = makeID("JudgementPower");
+    public static final String POWER_ID = makeID("SidestepPower");
     public static final String NAME = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).NAME;
     public static final String[] DESCRIPTIONS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).DESCRIPTIONS;
 
@@ -20,11 +20,13 @@ public class SidestepPower extends AbstractPackmasterPower {
     }
 
     public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
+        flash();
         float reduction = type == DamageInfo.DamageType.NORMAL ? 0 : damage;
-        if (this.amount <= 0) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+        amount--;
+        if (amount == 0) {
+            removeThis();
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this, 1));
+            updateDescription();
         }
         return reduction;
     }
@@ -34,11 +36,14 @@ public class SidestepPower extends AbstractPackmasterPower {
         return damageAmount;
     }
 
-    public void atEndOfRound() {
-        if (this.amount <= 0) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+    @Override
+    public void atStartOfTurnPostDraw() {
+        flash();
+        amount--;
+        if (amount == 0) {
+            removeThis();
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this, 1));
+            updateDescription();
         }
     }
 }
