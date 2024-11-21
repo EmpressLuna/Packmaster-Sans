@@ -2,13 +2,12 @@ package thePackmaster.cards.sanspack;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thePackmaster.cards.downfallpack.AbstractDownfallCard;
 import thePackmaster.powers.sanspack.JudgementPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.applyToSelf;
 
-public class JudgementForm extends AbstractDownfallCard {
+public class JudgementForm extends AbstractSansCard {
     public final static String ID = makeID("JudgementForm");
 
     public JudgementForm() {

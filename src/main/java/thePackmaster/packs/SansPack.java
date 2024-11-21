@@ -3,8 +3,7 @@ package thePackmaster.packs;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import thePackmaster.SpireAnniversary5Mod;
-import thePackmaster.cards.downfallpack.*;
-import thePackmaster.cards.sanspack.JudgementForm;
+import thePackmaster.cards.sanspack.*;
 
 import java.util.ArrayList;
 
@@ -22,17 +21,16 @@ public class SansPack extends AbstractCardPack {
     @Override
     public ArrayList<String> getCards() {
         ArrayList<String> cards = new ArrayList<>();
+        cards.add(Blindside.ID);
+        cards.add(BoneMissile.ID);
+        cards.add(DesperateDodge.ID);
+        cards.add(Encircle.ID);
         cards.add(JudgementForm.ID);
-        cards.add(Chronoboost.ID);
-        cards.add(DefensiveMode.ID);
-        cards.add(Execute.ID);
-        cards.add(GhostflameStrike.ID);
-        cards.add(HyperBeam.ID);
-        cards.add(InvincibleStrength.ID);
-        cards.add(PrepareCrush.ID);
-        cards.add(ShapersBlessing.ID);
-        cards.add(YouAreMine.ID);
-        cards.add(SlimeCrush.ID);
+        cards.add(KarmicBlast.ID);
+        cards.add(OpeningGambit.ID);
+        cards.add(ReverseGravity.ID);
+        cards.add(SurviveThis.ID);
+        cards.add(WeightOfYourSins.ID);
         return cards;
     }
 }

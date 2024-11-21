@@ -1,50 +1,44 @@
 {
+  "${ModID}:Blindside": {
+    "NAME": "Blindside",
+    "DESCRIPTION": "${ModID}:Bony. NL Deal !D! damage !M! times. NL If the enemy intends to attack, gain [E]."
+  },
+  "${ModID}:BoneMissile": {
+    "NAME": "Bone Missile",
+    "DESCRIPTION": "${ModID}:Bony. NL Deal !D! damage !M! times. NL If the enemy does not intend to attack, apply !${ModID}:m2! ${ModID}:Karma."
+  },
+  "${ModID}:DesperateDodge": {
+    "NAME": "Desperate Dodge",
+    "DESCRIPTION": "Gain 2 ${ModID}:Sidestep and 2 Vulnerable. NL stslib:Exhaustive !stslib:ex!"
+  },
+  "${ModID}:Encircle": {
+    "NAME": "Encircle",
+    "DESCRIPTION": "Whenever the target takes unblocked attack damage this turn, gain 1 temporary Strength. NL stslib:Exhaustive !stslib:ex!"
+  },
   "${ModID}:JudgementForm": {
     "NAME": "Judgement Form",
-    "DESCRIPTION": "At the start of each turn, gain 1 Sidestep and lose 1 Strength, Dexterity or Focus"
+    "DESCRIPTION": "Ethereal. NL At the start of each turn, gain 1 ${ModID}:Sidestep and lose 1 Strength, Dexterity or Focus.",
+    "UPGRADE_DESCRIPTION": "At the start of each turn, gain 1 ${ModID}:Sidestep and lose 1 Strength, Dexterity or Focus."
   },
-  "${ModID}:Chronoboost": {
-    "NAME": "Chrono-Boost",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain 1 Strength for every 12th card you play."
+  "${ModID}:KarmicBlast": {
+    "NAME": "Karmic Blast",
+    "DESCRIPTION": "${ModID}:Bony. NL Deal !D! damage !M! times."
   },
-  "${ModID}:DefensiveMode": {
-    "NAME": "Defensive Mode",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Weak."
+  "${ModID}:OpeningGambit": {
+    "NAME": "Opening Gambit",
+    "DESCRIPTION": "Innate. NL Apply !M! ${ModID}:Karma. NL Gain !${ModID}:m2! ${ModID}:Sidestep. NL Exhaust"
   },
-  "${ModID}:Execute": {
-    "NAME": "Execute",
-    "DESCRIPTION": "Deal !D! damage twice. NL If you are in a Stance, deal !D! damage a third time."
+  "${ModID}:ReverseGravity": {
+    "NAME": "Reverse Gravity",
+    "DESCRIPTION": "Apply !M! Weak. NL If the last card played was an attack, apply !${ModID}:m2! ${ModID}:Karma."
   },
-  "${ModID}:GhostflameStrike": {
-    "NAME": "Ghostflame Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Channel !M! ${ModID}:Ghostflame."
+  "${ModID}:SurviveThis": {
+    "NAME": "Survive This!",
+    "DESCRIPTION": "${ModID}:Bony. NL Apply 5 Karma. NL Deal !D! damage a number of times equal to the enemy's ${ModID}:Karma.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Bony. NL Apply 5 Karma. NL Deal !D! damage a number of times equal to twice the enemy's ${ModID}:Karma."
   },
-  "${ModID}:HyperBeam": {
-    "NAME": "HYPER BEAM",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL At the start of your next turn, lose [E] [E].",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL At the start of your next turn, lose [E]."
-  },
-  "${ModID}:InvincibleStrength": {
-    "NAME": "Invincible",
-    "DESCRIPTION": "Gain !M! ${ModID}:Invincible. NL If you already had *Invincible, it lasts another turn instead."
-  },
-  "${ModID}:PrepareCrush": {
-    "NAME": "Prepare Crush",
-    "DESCRIPTION": "Gain !B! Block. NL On your next turn, gain [E] and add *SLIME *CRUSH! to your hand."
-  },
-  "${ModID}:ShapersBlessing": {
-    "NAME": "Shaper's Blessing",
-    "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL Enter ${ModID}:Ancient.",
-    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !B! Block and !M! Plated Armor. NL Enter ${ModID}:Ancient."
-  },
-  "${ModID}:SlimeCrush": {
-    "NAME": "SLIME CRUSH!",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Ethereal. NL Deal !D! damage to ALL enemies. NL Exhaust."
-  },
-  "${ModID}:YouAreMine": {
-    "NAME": "YOU ARE MINE!",
-    "DESCRIPTION": "Apply !M! Vulnerable and !M! Weak, and remove the target's Block. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and !M! Weak, and remove the target's Block."
+  "${ModID}:WeightOfYourSins": {
+    "NAME": "Weight of your Sins",
+    "DESCRIPTION": "Every time you deal unblocked attack damage, apply 1 ${ModID}:Karma."
   }
 }

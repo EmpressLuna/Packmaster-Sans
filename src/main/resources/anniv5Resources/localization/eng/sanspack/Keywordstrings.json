@@ -1,23 +1,23 @@
 [
   {
-    "PROPER_NAME": "Invincible",
+    "PROPER_NAME": "Sidestep",
     "NAMES": [
-      "invincible"
+      "sidestep"
     ],
-    "DESCRIPTION": "You cannot lose more than a given amount of HP in a single turn. NL At the end of any round in which Invincible prevented HP loss, remove it."
+    "DESCRIPTION": "Prevent the next time you would take damage this turn."
   },
   {
-    "PROPER_NAME": "Ghostflame",
+    "PROPER_NAME": "Bony",
     "NAMES": [
-      "ghostflame"
+      "bony"
     ],
-    "DESCRIPTION": "Orb: Deals damage to ALL enemies. Has no #yEvoke effect if its passive has not been triggered yet."
+    "DESCRIPTION": "This card's damage is unaffected by Strength."
   },
   {
-    "PROPER_NAME": "Ancient",
+    "PROPER_NAME": "Karma",
     "NAMES": [
-      "ancient"
+      "karma"
     ],
-    "DESCRIPTION": "Stance: If you have less than #b6 Plated Armor at the start of your turn, gain #b2 Plated Armor. NL When you leave this Stance, gain #b1 Artifact."
+    "DESCRIPTION": "Creatures afflicted with Karma take 1 damage for each of their buffs at the start of their turn."
   }
 ]

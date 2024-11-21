@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import thePackmaster.powers.AbstractPackmasterPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
@@ -19,31 +18,16 @@ public class SidestepPower extends AbstractPackmasterPower {
         super(POWER_ID, NAME, PowerType.BUFF, true, owner, amount);
     }
 
-    public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
-        flash();
-        float reduction = type == DamageInfo.DamageType.NORMAL ? 0 : damage;
-        amount--;
-        if (amount == 0) {
-            removeThis();
-        } else {
-            updateDescription();
+    @Override
+    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0) {
+            this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
         }
-        return reduction;
-    }
-
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        this.flash();
-        return damageAmount;
+        return 0;
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        flash();
-        amount--;
-        if (amount == 0) {
-            removeThis();
-        } else {
-            updateDescription();
-        }
+    public void atEndOfRound() {
+        this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
     }
 }
