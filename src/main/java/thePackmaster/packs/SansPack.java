@@ -15,7 +15,7 @@ public class SansPack extends AbstractCardPack {
     public static final String AUTHOR = UI_STRINGS.TEXT[2];
 
     public SansPack() {
-        super(ID, NAME, DESC, AUTHOR, new PackSummary(3, 5, 2, 3, 1, PackSummary.Tags.Debuffs));
+        super(ID, NAME, DESC, AUTHOR, new PackSummary(3, 3, 4, 3, 2, PackSummary.Tags.Debuffs));
     }
 
     @Override
@@ -30,7 +30,7 @@ public class SansPack extends AbstractCardPack {
         cards.add(OpeningGambit.ID);
         cards.add(ReverseGravity.ID);
         cards.add(SurviveThis.ID);
-        cards.add(WeightOfYourSins.ID);
+        cards.add(EndlessBones.ID);
         return cards;
     }
 }

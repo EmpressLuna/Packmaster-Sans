@@ -2,36 +2,41 @@
   "${ModID}:JudgementPower": {
     "NAME": "Judgement Form",
     "DESCRIPTIONS": [
-      "At the start of each turn, gain 1 Sidestep and lose 1 Strength, Dexterity or Focus"
+      "At the start of each turn, gain ",
+      " Sidestep and lose ",
+      " Strength, Dexterity or Focus"
     ]
   },
   "${ModID}:SidestepPower": {
     "NAME": "Sidestep",
     "DESCRIPTIONS": [
-      "Nullify the next attack. Wears off next turn."
+      "Nullify the next ",
+      "time you would take damage. Lasts 1 turn.",
+      " times you would take damage. Lasts 1 turn."
     ]
   },
-  "${ModID}:DeEnergizedPower": {
-    "NAME": "De-Energized",
+  "${ModID}:KarmaPower": {
+    "NAME": "Karma",
     "DESCRIPTIONS": [
-      "At the start of your next turn, lose #b",
-      " [E] ."
+      "This creature takes 1 damage for each of its buffs and debuffs at the start of its next ",
+      "turn.",
+      " turns."
     ]
   },
-  "${ModID}:VexVinciblePower": {
-    "NAME": "Invincible",
+  "${ModID}:EncirclePower": {
+    "NAME": "Encircled",
     "DESCRIPTIONS": [
-      "Caps all damage and HP loss taken to #b",
-      " in a turn. Removed after activation.",
-      "Caps all damage and HP loss taken to #b",
-      " in a turn. Removed after #b",
-      " activations."
+      "You gain ",
+      " temporary strength each time this creature receives unblocked attack damage for the next ",
+      " turn.",
+      " turns."
     ]
   },
-  "${ModID}:NextTurnGainSlimeCrushPower": {
-    "NAME": "Preparing Crush",
+  "${ModID}:EndlessBonesPower": {
+    "NAME": "Endless Bones",
     "DESCRIPTIONS": [
-      "This shouldn't ever actually appear, right?"
+      "Unblocked attacks apply ",
+      " Karma."
     ]
   }
 }

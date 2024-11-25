@@ -11,13 +11,13 @@
     "NAMES": [
       "bony"
     ],
-    "DESCRIPTION": "This card's damage is unaffected by Strength."
+    "DESCRIPTION": "This card always does 1 damage."
   },
   {
     "PROPER_NAME": "Karma",
     "NAMES": [
       "karma"
     ],
-    "DESCRIPTION": "Creatures afflicted with Karma take 1 damage for each of their buffs at the start of their turn."
+    "DESCRIPTION": "Creatures afflicted with Karma take 1 damage for each of their buffs and debuffs, except Karma, at the start of their turn."
   }
 ]

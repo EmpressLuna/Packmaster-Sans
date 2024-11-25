@@ -36,4 +36,9 @@ public class JudgementPower extends AbstractPackmasterPower {
                 break;
         }
     }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+    }
 }

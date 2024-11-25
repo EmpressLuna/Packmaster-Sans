@@ -1,10 +1,10 @@
 package thePackmaster.powers.sanspack;
 
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import thePackmaster.actions.sanspack.SidestepAction;
 import thePackmaster.powers.AbstractPackmasterPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
@@ -21,13 +21,23 @@ public class SidestepPower extends AbstractPackmasterPower {
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
         if (damageAmount > 0) {
-            this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
+            this.addToTop(new SidestepAction(this.owner, this.owner, this.ID, 1));
         }
         return 0;
     }
 
     @Override
     public void atEndOfRound() {
-        this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
+        this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, this.amount));
+    }
+
+    @Override
+    public void updateDescription() {
+        if (amount == 1){
+            this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1];
+        }
+        else {
+            this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
+        }
     }
 }

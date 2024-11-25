@@ -9,15 +9,15 @@
   },
   "${ModID}:DesperateDodge": {
     "NAME": "Desperate Dodge",
-    "DESCRIPTION": "Gain 2 ${ModID}:Sidestep and 2 Vulnerable. NL stslib:Exhaustive !stslib:ex!"
+    "DESCRIPTION": "Gain 2 ${ModID}:Sidestep. NL Gain 3 Vulnerable. NL stslib:Exhaustive !stslib:ex!"
   },
   "${ModID}:Encircle": {
     "NAME": "Encircle",
-    "DESCRIPTION": "Whenever the target takes unblocked attack damage this turn, gain 1 temporary Strength. NL stslib:Exhaustive !stslib:ex!"
+    "DESCRIPTION": "Whenever the target takes unblocked damage from an Attack this turn, gain 1 temporary Strength. NL stslib:Exhaustive !stslib:ex!"
   },
   "${ModID}:JudgementForm": {
     "NAME": "Judgement Form",
-    "DESCRIPTION": "Ethereal. NL At the start of each turn, gain 1 ${ModID}:Sidestep and lose 1 Strength, Dexterity or Focus.",
+    "DESCRIPTION": "Ethereal. NL At the start of each turn, gain 1 ${ModID}:Sidestep and randomly lose 1 Strength, Dexterity or Focus.",
     "UPGRADE_DESCRIPTION": "At the start of each turn, gain 1 ${ModID}:Sidestep and lose 1 Strength, Dexterity or Focus."
   },
   "${ModID}:KarmicBlast": {
@@ -26,19 +26,19 @@
   },
   "${ModID}:OpeningGambit": {
     "NAME": "Opening Gambit",
-    "DESCRIPTION": "Innate. NL Apply !M! ${ModID}:Karma. NL Gain !${ModID}:m2! ${ModID}:Sidestep. NL Exhaust"
+    "DESCRIPTION": "Innate, Ethereal. NL Apply !M! ${ModID}:Karma. NL Gain !${ModID}:m2! ${ModID}:Sidestep. NL Exhaust"
   },
   "${ModID}:ReverseGravity": {
     "NAME": "Reverse Gravity",
-    "DESCRIPTION": "Apply !M! Weak. NL If the last card played was an attack, apply !${ModID}:m2! ${ModID}:Karma."
+    "DESCRIPTION": "Apply !M! Weak. NL If the last card played was an Attack, apply !${ModID}:m2! ${ModID}:Karma."
   },
   "${ModID}:SurviveThis": {
     "NAME": "Survive This!",
-    "DESCRIPTION": "${ModID}:Bony. NL Apply 5 Karma. NL Deal !D! damage a number of times equal to the enemy's ${ModID}:Karma.",
-    "UPGRADE_DESCRIPTION": "${ModID}:Bony. NL Apply 5 Karma. NL Deal !D! damage a number of times equal to twice the enemy's ${ModID}:Karma."
+    "DESCRIPTION": "${ModID}:Bony. NL Deal !D! damage a number of times equal to the enemy's ${ModID}:Karma. NL Apply 3 ${ModID}:Karma.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Bony. NL Deal !D! damage a number of times equal to twice the enemy's ${ModID}:Karma. NL Apply 3 ${ModID}:Karma."
   },
-  "${ModID}:WeightOfYourSins": {
-    "NAME": "Weight of your Sins",
-    "DESCRIPTION": "Every time you deal unblocked attack damage, apply 1 ${ModID}:Karma."
+  "${ModID}:EndlessBones": {
+    "NAME": "Endless Bones",
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply 1 ${ModID}:Karma."
   }
 }

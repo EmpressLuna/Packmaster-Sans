@@ -16,6 +16,7 @@ public class DesperateDodge extends AbstractSansCard {
     public DesperateDodge() {
         super(ID, 1, AbstractCard.CardType.SKILL, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
         magicNumber = 1;
+        baseMagicNumber = magicNumber;
         ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, magicNumber);
         ExhaustiveField.ExhaustiveFields.exhaustive.set(this, magicNumber);
     }
@@ -23,11 +24,13 @@ public class DesperateDodge extends AbstractSansCard {
     @Override
     public void upp() {
         upgradeMagicNumber(1);
+        ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, magicNumber);
+        ExhaustiveField.ExhaustiveFields.exhaustive.set(this, magicNumber);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         applyToSelf(new SidestepPower(p, 2));
-        applyToSelf(new VulnerablePower(p, 2, false));
+        applyToSelf(new VulnerablePower(p, 3, false));
     }
 }

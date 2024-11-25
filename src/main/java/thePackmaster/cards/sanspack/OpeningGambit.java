@@ -17,10 +17,11 @@ public class OpeningGambit extends AbstractSansCard {
         super(ID, 0, AbstractCard.CardType.SKILL, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
         isInnate = true;
         exhaust = true;
-        magicNumber = 4;
+        magicNumber = 2;
         baseMagicNumber = magicNumber;
         secondMagic = 1;
         baseSecondMagic = secondMagic;
+        isEthereal = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -29,7 +30,7 @@ public class OpeningGambit extends AbstractSansCard {
     }
 
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
         upgradeSecondMagic(1);
     }
 

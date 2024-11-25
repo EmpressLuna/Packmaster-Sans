@@ -6,10 +6,10 @@
       "EmpressLuna"
     ]
   },
-  "${ModID}:DownfallPackHat": {
+  "${ModID}:SansPackHat": {
     "TEXT": [
-      "",
-      ""
+      "Feels like you're gonna have a bad time...",
+      "Sans Mask"
     ]
   }
 }
