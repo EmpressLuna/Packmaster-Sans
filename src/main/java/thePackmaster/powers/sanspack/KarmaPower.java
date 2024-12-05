@@ -27,7 +27,7 @@ public class KarmaPower extends AbstractPackmasterPower {
     public void atStartOfTurn() {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flashWithoutSound();
-            this.addToBot(new KarmaDamageAction(this.owner, this.source, this.amount, AbstractGameAction.AttackEffect.POISON));
+            this.addToBot(new KarmaDamageAction(this.owner, this.source, this.amount, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
     }
 

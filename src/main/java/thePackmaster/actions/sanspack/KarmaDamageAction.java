@@ -39,7 +39,7 @@ public class KarmaDamageAction extends AbstractGameAction {
             while(var1.hasNext()) {
                 AbstractPower p = (AbstractPower)var1.next();
                 if (!(p instanceof KarmaPower) && !(p instanceof InvinciblePower)) {
-                    karmaDamage += p.amount;
+                    karmaDamage += Math.abs(p.amount);
                 }
             }
 
@@ -51,9 +51,6 @@ public class KarmaDamageAction extends AbstractGameAction {
                     this.target.tint.color = Color.PURPLE.cpy();
                     this.target.tint.changeColor(Color.WHITE.cpy());
                     this.target.damage(new DamageInfo(this.source, karmaDamage, DamageInfo.DamageType.HP_LOSS));
-                    if (this.target.isDying) {
-                        ++AbstractPlayer.poisonKillCount;
-                    }
                 }
 
                 AbstractPower p = this.target.getPower("Karma");

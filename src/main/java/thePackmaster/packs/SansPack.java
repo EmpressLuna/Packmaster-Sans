@@ -15,7 +15,7 @@ public class SansPack extends AbstractCardPack {
     public static final String AUTHOR = UI_STRINGS.TEXT[2];
 
     public SansPack() {
-        super(ID, NAME, DESC, AUTHOR, new PackSummary(3, 3, 4, 3, 2, PackSummary.Tags.Debuffs));
+        super(ID, NAME, DESC, AUTHOR, new PackSummary(3, 3, 4, 4, 1, PackSummary.Tags.Debuffs));
     }
 
     @Override
